@@ -1,0 +1,34 @@
+// .eslintrc
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 13,
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint"],
+  // HERE
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+
+  "rules": {
+    "no-console": "warn",
+    "no-undefined": "error",
+    "no-undef": "error",
+    "no-unused-expressions": "error",
+    "no-unreachable": "error",
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/consistent-type-definitions": ["error", "type"]
+  },
+
+  "env": {
+    "node":true,
+    "browser": true,
+    "es2021": true
+  },
+  "globals": {
+    "process":"readonly"
+  }
+}
